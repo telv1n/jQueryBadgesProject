@@ -20,6 +20,17 @@ $(function() {
       $('<h3 />', {
         text: course.title
       }).appendTo($courseDiv);
+
+      $('<img />', {
+        src: course.badge
+      }).appendTo($courseDiv);
+
+      $('<a />', {
+        href: course.url,
+        target: '_blank',
+        text: 'See Course',
+        'class': 'btn btn-primary'
+      }).appendTo($courseDiv);
     })
   }
 });
